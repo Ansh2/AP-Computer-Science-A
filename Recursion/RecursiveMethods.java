@@ -3,7 +3,7 @@ package Recursion;
 public class RecursiveMethods {
 	public static long factorial(int n){
 		// 10! = 10 * 9!
-		if (n == 1)
+		if (n == 1 || n == 0)
 			return 1;
 		return n * factorial(n-1);
 		
@@ -11,7 +11,7 @@ public class RecursiveMethods {
 	
 	public static long sumOfInts (int y){
 	// sumOfInts(5) should return 5+4+3+2+1 = 15.
-		if (y == 1 || y == 0) {
+		if (y == 1) {
 			return 1; 
 		}
 		return y + sumOfInts(y - 1); 
