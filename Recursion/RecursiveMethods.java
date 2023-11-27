@@ -11,7 +11,7 @@ public class RecursiveMethods {
 	
 	public static long sumOfInts (int y){
 	// sumOfInts(5) should return 5+4+3+2+1 = 15.
-		if (y == 1) {
+		if (y == 1 || y == 0) {
 			return 1; 
 		}
 		return y + sumOfInts(y - 1); 
